@@ -18,34 +18,11 @@ if ( ! defined( 'ABSPATH' ) ) { exit; } ?>
 
 				<?php if ( have_posts() ) : ?>
         <div class="col-md-9">
-          <?php while ( have_posts() ) : the_post(); ?>
-					<article class="list-article">
+          <?php while ( have_posts() ) : the_post();
 
-						<?php
-							$thumb_id = get_post_thumbnail_id();
-							$thumb_url = wp_get_attachment_url($thumb_id, 'full');
-							if($thumb_url){
-						?>
-						<div class="blog-media">
-							<a href="<?php the_permalink(); ?>">
-								<img src="<?php echo $thumb_url; ?>" />
-							</a>
-						</div>
-						<?php } ?>
+            get_template_part( 'content', get_post_format() );
 
-						<div class="blog-content <?php echo ( $thumb_url ? 'half': 'full' ); ?>">
-							<h3 class="entry-title"> <a href="<?php echo get_the_permalink(); ?>" title="<?php echo get_the_title(); ?>"> <?php echo get_the_title(); ?> </a></h3>
-							<?php echo content(30); ?>
-
-							<a href="<?php echo get_the_permalink(); ?>" class="details"> Details &raquo; </a>
-
-							<?php roast_entry_meta(); ?>
-
-						</div>
-
-					</article>
-
-				<?php endwhile; ?>
+					endwhile; ?>
 
         <?php
           if ( function_exists('roast_pagination') )
