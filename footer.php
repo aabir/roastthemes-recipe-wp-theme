@@ -29,7 +29,7 @@ global $roast_options; ?>
 </div>
 <?php endif; ?>
 <a href="#" class="scrollup">Scroll</a>
-<?php echo $roast_options['google_analytics']; ?>
+<?php echo @$roast_options['google_analytics']; ?>
 <?php wp_footer(); ?>
 </body>
 </html>

@@ -30,7 +30,7 @@ Redux::init( 'roast_options' );
 
 /* Dynamic sidebar areas creation from theme options */
 
-$sidebars = $roast_options['roast_widget_areas'];
+$sidebars = @$roast_options['roast_widget_areas'];
 
 if($sidebars):
 foreach($sidebars as $sidebar){

@@ -1,6 +1,6 @@
 <?php
 /**
- * Main header file 
+ * Main header file
  *
  * @package roast-recipe
  * @since roast-recipe 1.0
@@ -39,7 +39,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; } ?>
 
 <?php wp_head(); ?>
 
-<?php if( $roast_options['roast_editor_css'] ): ?>
+<?php if( @$roast_options['roast_editor_css'] ): ?>
 	<style id='style-inline-css' type='text/css'>
 		<?php echo $roast_options['roast_editor_css']; ?>
 	</style>
