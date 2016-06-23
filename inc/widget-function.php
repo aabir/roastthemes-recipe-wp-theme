@@ -182,14 +182,14 @@ add_action( 'widgets_init', 'load_contact_widget' );
 
 final class Newletter_Widget_Class extends WP_Widget {
 
-		function __construct() {
+	function __construct() {
 
       $widget_ops = array('classname' => 'news-ltr', 'description' => __('This widget will only work when MailChimp API key and List ID provided in Theme Options', 'roast'));
 
       $control_ops = array('width' => 250, 'height' => 250);
 
       parent::__construct('newsletter_widget', $name = __('Roast mailchimp API Newsletter Widget', 'roast'), $widget_ops, $control_ops );
-		}
+	}
 
 
 		function form($instance) {

@@ -1,11 +1,11 @@
 # Roastthemes Recipe WordPress Theme.
 A free WordPress theme for restaurant.
 
-The HTML template was taken from https://w3layouts.com/hot-foods-a-hotel-category-flat-bootstrap-responsive-web-template/. I have convert the HTML to WordPress theme and added lots of custom functionality. You can see the theme <a href="http://roastthemes.recipe.shiblenoman.com/" target="_blank">demo</a> here.
+The HTML template was taken from https://w3layouts.com/hot-foods-a-hotel-category-flat-bootstrap-responsive-web-template/. I have build the WordPress theme from HTML and added lots of custom functionality. You can see the theme <a href="http://roastthemes.recipe.shiblenoman.com/" target="_blank">demo</a> here.
 
 <h2>Copyright</h2>
 Feel free to use and modify this theme as you like.
-Fruitful is distributed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
+RoastRecipe is distributed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
 
 <h2>Features</h2>
 <ul>
