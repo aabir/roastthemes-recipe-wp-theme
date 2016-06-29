@@ -32,12 +32,13 @@ RoastRecipe is distributed under the GPLv2 license (http://www.gnu.org/licenses/
 <li>Font Awesome licensed under the MIT License http://fortawesome.github.io/Font-Awesome/</li>
 <li>Redux framework for theme options https://reduxframework.com/  licensed under the Version 2 of the GNU General Public License </li>
 <li>CMB2 for  metaboxes, custom fields https://github.com/WebDevStudios/CMB2/ licensed under GPLv2 or later</li>
-<li>GOogle maps API https://developers.google.com/maps/</li>
-<li>flexisel jQuery script https://9bitstudios.github.io/flexisel/</li>
-<li>isotope jQuery script http://isotope.metafizzy.co/</li>
+<li>Google maps API https://developers.google.com/maps/</li>
+<li>Flexisel jQuery script https://9bitstudios.github.io/flexisel/</li>
+<li>Isotope jQuery script http://isotope.metafizzy.co/</li>
 </ul>
 
 = 1.0.0 =
+
 11.06.2016
 
 * Initial Release
