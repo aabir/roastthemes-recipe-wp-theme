@@ -293,8 +293,8 @@ final class Newletter_Widget_Class extends WP_Widget {
 								type:"post",
 								data:"action=send_newsletter&email="+email+"&apiKey="+apiKey+"&listId="+listId,
 								success:function(result){
-									result = result.replace("0", "");
-									if(result=='ok')
+									//result = result.replace("0", "");
+									if(result=='ok0')
 									{
 										result = successMsg;
 										$('#result2').css('color','#0093E2');

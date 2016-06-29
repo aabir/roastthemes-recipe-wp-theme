@@ -15,7 +15,7 @@ global $roast_options; ?>
 		 <h3><?php echo $roast_options['roast_service_title']; ?></h3>
 		 <div class="service-grids">
 			 <?php
-			 	 $roast_service_one = $roast_options['roast_service_one'];
+			 	 @$roast_service_one = $roast_options['roast_service_one'];
 				 if($roast_service_one):
 				 $args = array(
 					 'post_type' => 'roast_services',
@@ -41,7 +41,7 @@ global $roast_options; ?>
 
 				<!-- second service conta start -->
 				<?php
- 			 	 $roast_service_two = $roast_options['roast_service_two'];
+ 			 	 @$roast_service_two = $roast_options['roast_service_two'];
 				 if($roast_service_two):
 	 				 $args = array(
 	 					 'post_type' => 'roast_services',
@@ -68,7 +68,7 @@ global $roast_options; ?>
 
 				<!-- Third service container -->
 				<?php
- 			 		$roast_service_three = $roast_options['roast_service_three'];
+ 			 		@$roast_service_three = $roast_options['roast_service_three'];
 					if($roast_service_three):
 	 				 $args = array(
 	 					 'post_type' => 'roast_services',

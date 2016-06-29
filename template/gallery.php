@@ -15,7 +15,7 @@ global $roast_options; ?>
 	 <div class="container">
 		 <h3><?php echo $roast_options['roast_gallery_title']; ?></h3>
 		 <?php
-		 $imageIDs = $roast_options['roast_home_gallery'];
+		 @$imageIDs = $roast_options['roast_home_gallery'];
 			if( $imageIDs ) : ?>
 		 <div class="arrival-grids">
 			 <ul id="flexiselGallery">

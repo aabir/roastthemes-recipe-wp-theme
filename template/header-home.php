@@ -57,7 +57,7 @@ global $roast_options; ?>
 </div>
 <?php endif; //checking slider is on or not  ?>
 
-<?php $roast_front_banner = $roast_options['roast_front_banner'];
+<?php @$roast_front_banner = $roast_options['roast_front_banner'];
  if( isset($roast_front_banner['url'] ) && ( $switch_slider == 0) ){
 	 	$banner = "url(".$roast_front_banner['url'].")";
 	 } else {

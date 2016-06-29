@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 global $roast_options; ?>
 
-<?php $recipe_permalink = get_permalink($roast_options['roast_recipe_page_link']); ?>
+<?php @$recipe_permalink = get_permalink($roast_options['roast_recipe_page_link']); ?>
 
 <div class="special">
 	 <div class="container">
@@ -40,6 +40,17 @@ global $roast_options; ?>
 							 $thumb = get_post_thumbnail_id();
 							 $img_url = wp_get_attachment_url( $thumb,'full');
 							 $img_url = ($img_url) ?: get_template_directory_uri().'/images/default-thumbnail.jpg'; ?>
+
+							 <div class="pop-thumb-info thumb-home">
+							 		<?php  $roast_recipe_special = get_post_meta($post->ID, 'roast_recipe_special', true);
+							 		 if($roast_recipe_special == 'on'){ ?>
+							 		<div class="pop-recipe-special">Special</div>
+							 		<?php } ?>
+							 		<?php if($roast_recipe_price = get_post_meta($post->ID, 'roast_recipe_price', true)){ ?>
+							 		<div class="pop-recipe-price"> <?php echo $roast_recipe_price; ?> </div>
+							 		<?php } ?>
+							 </div>
+
 						 <img src="<?php echo $img_url; ?>" alt="<?php echo get_post($thumb)->post_title; ?>" />
 					 <h4><?php the_title(); ?></h4>
 					 </a>

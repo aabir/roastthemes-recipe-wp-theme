@@ -336,14 +336,15 @@ add_action( 'wp_ajax_send_newsletter', 'send_newsletter' );
 	function send_newsletter()
 	{
 		$email = $_POST['email'];
-    $newsletter_apikey = $_POST['newsletter_apikey'];
-    $newsletter_listid = $_POST['newsletter_listid'];
+    $newsletter_apikey = $_POST['apiKey'];
+    $newsletter_listid = $_POST['listId'];
 
 		if($email && $newsletter_apikey && $newsletter_listid)
 		{
-      $prefix_url = explode('-', $newsletter_listid); //explode hypen(-) to get server url first portion.
+
+      $prefix_url = explode('-', $newsletter_apikey); //explode hypen(-) to get server url first portion.
       $prefix_url = $prefix_url[1];
-			echo $submit_url = "https://".$prefix_url.".api.mailchimp.com/2.0/lists/subscribe.json"; //Submit URL
+			$submit_url = "https://".$prefix_url.".api.mailchimp.com/2.0/lists/subscribe.json"; //Submit URL
 
 			$send_data=array(
 				'email'=>array('email'=> $email),

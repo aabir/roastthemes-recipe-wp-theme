@@ -50,8 +50,9 @@ get_header(); ?>
 					<?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
 						<?php $terms = get_the_terms( $post->ID, 'roast_recipe_cat' );
 							if ( $terms && ! is_wp_error( $terms ) ) :
+									$slug = "";
 									 foreach ( $terms as $term ) {
-											$slug = $term->slug;
+											$slug .= $term->slug.' ';
 									 }
 							endif;
 						?>
